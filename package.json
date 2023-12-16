@@ -29,5 +29,10 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "jquery": "^3.7.1",
+    "typed.js": "^2.1.0"
   }
 }
