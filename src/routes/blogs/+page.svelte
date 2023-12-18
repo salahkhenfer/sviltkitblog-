@@ -2,6 +2,16 @@
 <script>
     import Blog1 from "../../img/blog-1.jpg"
 
+    const blogArray = [
+        "5-simple-tips-for-a-more-organized-life",
+        "how-to-create-a-successful-morning-routine",
+        "ode-to-svelte",
+        "style-guide",
+        "tablog-minimalistic-blog-theme",
+        "the-benefits-of-a-good-night-s-sleep",
+        "the-power-of-mindfulness-in-daily-life"
+    ];
+
 </script>
 
 
@@ -25,8 +35,8 @@
             <div class="col-lg-8">
                 <div class="row g-5">
                     <!-- list of blogs  -->
-                  {#each [...Array(10).keys()] as i}
-                    <a href="/how-to-create-a-successful-morning-routine" class="col-xl-6 col-lg-12 col-md-6">
+                  {#each blogArray as i}
+                    <a  href={`/${i}`} class="col-xl-6 col-lg-12 col-md-6 ">
                         <div class="blog-item">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid" src={Blog1} alt="">

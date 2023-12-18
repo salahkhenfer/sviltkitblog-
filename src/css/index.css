@@ -33,5 +33,7 @@
     /* light mode */
   }
 }
-
+a {
+  text-decoration: none;
+}
 /* purgecss end ignore */
