@@ -4,6 +4,7 @@
 import "../css/index.css"
 import "../css/style.css"
 import "../css/bootstrap.min.css"
+import App from "../lang/App.svelte"
 
 </script>
 
@@ -47,9 +48,9 @@ import "../css/bootstrap.min.css"
                 <a href="/service" class="nav-item nav-link">Service</a>
 
                     <a href="/blogs" class="nav-link ">Blog</a>
-        
-        
-                <a href="/contact" class="nav-item nav-link">Contact</a>
+                    
+                    <a href="/contact" class="nav-item nav-link">Contact</a>
+                    <App/>
             </div>
         </div>
     </nav>

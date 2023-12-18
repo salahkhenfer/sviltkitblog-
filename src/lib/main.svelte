@@ -1,4 +1,5 @@
 <script>
+  import { t, locale, locales } from '../lang/i18n'
 
 import "../css/style.css"
 import "../css/bootstrap.min.css"
@@ -29,7 +30,7 @@ import testimonialImg from "../img/testimonial.jpg"
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Business Consultancy</h5>
-                            <h1 class="display-1 text-white mb-md-4">We Provide Solution On Your Business</h1>
+                            <h1 class="display-1 text-white mb-md-4">{$t("homepage.welcome")}</h1>
                             <a href="./quote" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Get Quote</a>
                             <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
                         </div>
