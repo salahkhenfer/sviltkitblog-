@@ -1,61 +1,69 @@
 <script>
-
-
-import "../css/index.css"
-import "../css/style.css"
-import "../css/bootstrap.min.css"
-
+    /** @type {import('./$types').PageData} */
+    export let data;
 </script>
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body py-2 pe-3 border-end" href=""><small>FAQs</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
-                    <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
-                </div>
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white">Free Quote</h1>
+                <a href="">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="">Free Quote</a>
             </div>
-            <div class="col-md-6 text-center text-lg-end">
-                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
-                    <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid bg-secondary px-0">
+        <div class="row g-0">
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4">Request A Free Quote</h1>
+                <p class="mb-4">Kasd vero erat ea amet justo no stet, et elitr no dolore no elitr sea kasd et dolor diam tempor. Nonumy sed dolore no eirmod sit nonumy vero lorem amet stet diam at. Ea at lorem sed et, lorem et rebum ut eirmod gubergren, dolor ea duo diam justo dolor diam ipsum dolore stet stet elitr ut. Ipsum amet labore lorem lorem diam magna sea, eos sed dolore elitr.</p>
+                <form>
+                    <div class="row gx-3">
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
+                                <label for="form-floating-1">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                                <label for="form-floating-2">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
+                                    <option selected>Financial Consultancy</option>
+                                    <option value="1">Strategy Consultancy</option>
+                                    <option value="2">Tax Consultancy</option>
+                                </select>
+                                <label for="floatingSelect">Select A Service</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary w-100 h-100" type="submit">Request A Quote</button>
+                        </div>
                     </div>
-                    <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
-                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="img/quote.jpg" style="object-fit: cover;">
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
- <!-- Header Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-uppercase text-primary"><i class="far fa-smile text-primary me-2"></i>consult</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0 me-n3">
-                <a href="/" class="nav-item nav-link">Home</a>
-                <a href="/about" class="nav-item nav-link">About</a>
-                <a href="/service" class="nav-item nav-link">Service</a>
+    <!-- Quote End -->
+    
 
-                    <a href="/blogs" class="nav-link ">Blog</a>
-        
-        
-                <a href="/contact" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-     <!-- Header end -->
-
- <slot />
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-secondary p-5">
         <div class="row g-5">
@@ -115,3 +123,5 @@ import "../css/bootstrap.min.css"
     <!-- Footer End -->
 
 
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>

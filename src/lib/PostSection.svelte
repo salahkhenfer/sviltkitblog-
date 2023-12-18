@@ -8,6 +8,8 @@ import CalendarIcon from 'svelte-bootstrap-icons/lib/Calendar.svelte'
 import PinAngleFillIcon from 'svelte-bootstrap-icons/lib/PinAngleFill.svelte'
 
 export let post
+
+
 </script>
 
 {#key post.id}
