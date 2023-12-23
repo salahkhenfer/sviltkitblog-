@@ -1,12 +1,12 @@
 export default {
   en: {
     'homepage.title': 'Hello, World!',
-    'homepage.welcome': '"مرحبًا بك في مثال Svelte متعدد اللغات.',
+    'homepage.welcome': 'Shawerr Tech Consultations',
     'homepage.time': 'The current time is: {{time}}',
   },
-  es: {
+  ar: {
     'homepage.title': '¡Hola Mundo!',
-    'homepage.welcome': 'Welcome to the Svelte multilanguage example.',
+    'homepage.welcome': 'شاوِرّ للاستشارات التقنية',
     'homepage.time': 'La hora actual es: {{time}}',
   },
 }
