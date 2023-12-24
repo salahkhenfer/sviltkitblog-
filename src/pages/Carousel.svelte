@@ -12,10 +12,10 @@ import carouselImg from "../img/carousel-2.jpg"
                     <img class="w-100" src={homeImg} alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase">Business Consultancy</h5>
+                            <h5 class="text-white text-uppercase">{$t("homepage.BUSINESSCONSULTANCY")}</h5>
                             <h1 class="display-1 text-white mb-md-4">{$t("homepage.welcome")}</h1>
-                            <a href="./quote" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Get Quote</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                                                       <a href="./quote" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">{$t("GetQuote")}</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">{$t("ContactUs")}</a>
                         </div>
                     </div>
                 </div>
@@ -23,10 +23,10 @@ import carouselImg from "../img/carousel-2.jpg"
                     <img class="w-100" src={carouselImg} alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase">Business Consultancy</h5>
+                            <h5 class="text-white text-uppercase">{$t("homepage.BUSINESSCONSULTANCY")}</h5>
                             <h1 class="display-1 text-white mb-md-4">{$t("homepage.welcome")}</h1>
-                            <a href="./quote" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Get Quote</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                            <a href="./quote" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">{$t("GetQuote")}</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">{$t("ContactUs")}</a>
                         </div>
                     </div>
                 </div>

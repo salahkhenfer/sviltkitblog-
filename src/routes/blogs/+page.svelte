@@ -95,18 +95,7 @@
                 </div>
                 <!-- Search Form End -->
 
-                <!-- Category Start -->
-                <div class="mb-5">
-                    <h2 class="mb-4">Categories</h2>
-                    <div class="d-flex flex-column justify-content-start bg-secondary p-4">
-                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Web Design</a>
-                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Web Development</a>
-                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Web Development</a>
-                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Keyword Research</a>
-                        <a class="h5" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Email Marketing</a>
-                    </div>
-                </div>
-                <!-- Category End -->
+ 
 
                 <!-- Recent Post Start -->
                 <div class="mb-5">
@@ -129,26 +118,7 @@
                 </div>
                 <!-- Image End -->
 
-                <!-- Tags Start -->
-                <div class="mb-5">
-                    <h2 class="mb-4">Tag Cloud</h2>
-                    <div class="d-flex flex-wrap m-n1">
-                        <a href="" class="btn btn-secondary m-1">Design</a>
-                        <a href="" class="btn btn-secondary m-1">Development</a>
-                        <a href="" class="btn btn-secondary m-1">Marketing</a>
-                        <a href="" class="btn btn-secondary m-1">SEO</a>
-                        <a href="" class="btn btn-secondary m-1">Writing</a>
-                        <a href="" class="btn btn-secondary m-1">Consulting</a>
-                        <a href="" class="btn btn-secondary m-1">Design</a>
-                        <a href="" class="btn btn-secondary m-1">Development</a>
-                        <a href="" class="btn btn-secondary m-1">Marketing</a>
-                        <a href="" class="btn btn-secondary m-1">SEO</a>
-                        <a href="" class="btn btn-secondary m-1">Writing</a>
-                        <a href="" class="btn btn-secondary m-1">Consulting</a>
-                    </div>
-                </div>
-                <!-- Tags End -->
-
+   
                 <!-- Plain Text Start -->
                 <div>
                     <h2 class="mb-4">Plain Text</h2>

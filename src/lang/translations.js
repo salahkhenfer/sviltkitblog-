@@ -1,12 +1,27 @@
 export default {
   en: {
-    'homepage.title': 'Hello, World!',
     'homepage.welcome': 'Shawerr Tech Consultations',
-    'homepage.time': 'The current time is: {{time}}',
+    'homepage.BUSINESSCONSULTANCY': 'BUSINESS CONSULTANCY',
+    ContactUs: 'Contact Us',
+    GetQuote: 'Get Quote',
+    HOME: 'HOME',
+    ABOUT: 'ABOUT',
+    SERVICE: 'SERVICE',
+    BLOG: 'BLOG',
+    CONTACT: 'CONTACT',
+    Shawerr: ' Shawerr',
   },
   ar: {
-    'homepage.title': '¡Hola Mundo!',
     'homepage.welcome': 'شاوِرّ للاستشارات التقنية',
-    'homepage.time': 'La hora actual es: {{time}}',
+    'homepage.BUSINESSCONSULTANCY': 'استشارات الأعمال',
+    ContactUs: 'تواصل معنا ',
+    GetQuote: 'أحصل على ستشارة',
+
+    HOME: 'الصفحة الرئسية ',
+    ABOUT: 'من نحن ',
+    SERVICE: 'خدماتنا ',
+    BLOG: 'مقالاتنا',
+    CONTACT: ' تواصل معنا ',
+    Shawerr: ' شاوِرّ',
   },
 }

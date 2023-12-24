@@ -1,38 +1,36 @@
 <script>
 
-
+import { t, locale, locales } from '../lang/i18n'
 import "../css/index.css"
 import "../css/style.css"
 import "../css/bootstrap.min.css"
 import App from "../lang/App.svelte"
 
+
 </script>
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
-        <div class="row gx-0">
-
-        
-        </div>
-    </div>
-    <!-- Topbar End -->
+ 
  <!-- Header Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="/" class="navbar-brand p-0">
-            <h1 class="m-0 text-uppercase text-primary"><i class="far fa-smile text-primary me-2"></i>Shawerr </h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+     <div >
+
+         <a href="/" class="navbar-brand p-0">
+             <h1 class="m-0 text-uppercase text-primary"><i class="far fa-smile text-primary me-2"></i>{$t("Shawerr")} </h1>
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+     </div>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 me-n3">
-                <a href="/" class="nav-item nav-link">Home</a>
-                <a href="/about" class="nav-item nav-link">About</a>
-                <a href="/service" class="nav-item nav-link">Service</a>
+                <a href="/" class="nav-item nav-link">{$t("HOME")}</a>
+                <a href="/about" class="nav-item nav-link"> {$t("ABOUT")}</a>
+                <a href="/service" class="nav-item nav-link">{$t("SERVICE")}</a>
 
-                    <a href="/blogs" class="nav-link ">Blog</a>
+                    <a href="/blogs" class="nav-link ">{$t("BLOG")}</a>
                     
-                    <a href="/contact" class="nav-item nav-link">Contact</a>
+                    <a href="/contact" class="nav-item nav-link">{$t("CONTACT")}</a>
                     <App/>
             </div>
         </div>
