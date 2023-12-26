@@ -21,6 +21,10 @@
   --color: #040404;
   --bg-color: #ffffff;
   --bg-shade: #f8f8f8;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 
   @media (prefers-color-scheme: dark) {
     /* dark mode */
@@ -33,7 +37,26 @@
     /* light mode */
   }
 }
+*:not(i) {
+  font-family: 'Outfit', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Rubik', sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
+}
 a {
   text-decoration: none;
 }
+
 /* purgecss end ignore */
+iframe {
+  height: 100vh;
+}
+
+.durationRtl {
+  direction: rtl;
+  transition: all 3s ease;
+}
+.durationLtr {
+  direction: ltr;
+  transition: all 3s ease;
+}

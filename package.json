@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "jquery": "^3.7.1",
+    "sveltekit-i18n": "^2.4.2",
     "typed.js": "^2.1.0"
   }
 }

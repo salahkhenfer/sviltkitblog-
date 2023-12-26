@@ -1,7 +1,8 @@
 import { derived, writable } from 'svelte/store'
+import { browser } from '$app/environment'
 import translations from './translations'
 
-export const locale = writable('en')
+export const locale = writable('ar')
 export const locales = Object.keys(translations)
 
 function translate(locale, key, vars) {

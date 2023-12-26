@@ -1,4 +1,5 @@
 <script>
+import { t, locale, locales  } from '../lang/i18n'
 
 import "../css/style.css"
 import "../css/bootstrap.min.css"
@@ -14,11 +15,11 @@ import Team from '../pages/Team.svelte'
 import Testimonial from '../pages/Testimonial.svelte'
 import Carousel from "../pages/Carousel.svelte"
 import About from "../pages/About.svelte"
+import UseCases from "../pages/UseCases.svelte"
 
 
 </script>
  
-
 
 
     <!-- Carousel Start -->
@@ -118,6 +119,9 @@ import About from "../pages/About.svelte"
  <Testimonial/>
     <!-- Testimonial End -->
 
+    <!-- UseCases start  -->
+    <UseCases/>
+    <!-- UseCases end  -->
 
     <!-- Blog Start -->
     <div class="container-fluid py-6 px-5">

@@ -1,30 +1,25 @@
 <script>
-  import { t, locale, locales } from './i18n'
- // Subscribe to locale changes and update local storage
-
-locale.subscribe((value) => {
-  // Update the locale store with the new value
-  locale.update(() => value);
-});
-  // Create a locale specific timestamp
+  import { t, locale, locales } from "./i18n";
+	
+	// Create a locale specific timestamp
   $: time = new Date().toLocaleDateString($locale, {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 </script>
 
 <main>
   <div class="language-selector">
-
-    <select id="locale-select" bind:value={$locale}>
-      {#each locales as l}
-        <option value={l} key={l}>{l}</option>
+    <select class="locale-select" bind:value={$locale} >
+      {#each locales as l (l)}
+        <option value={l} key={l} o >
+          {l === "ar" ? "عربي" : "English"}
+        </option>
       {/each}
     </select>
   </div>
-
 </main>
 
 <style>
@@ -32,29 +27,19 @@ locale.subscribe((value) => {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    width: fit-content;
     background-color: #f8f8f8;
+    /* Add more styles if needed */
+  }
+
+  .language-selector, .locale-select {
+    text-align: center;
+    border: none;
+  }
+
+  .locale-select:focus, .language-selector:active {
     outline: none;
-        border: none;
-
-  }
-
-  .language-selector {
-    text-align: center;
     border: none;
-
-  
-  }
-  .locale-select {
-    text-align: center;
-    border: none;
-
-    width: 60px;
-  }
-  .language-selector:active {
-outline: none;
-border: none;
-
   }
 
   label {
@@ -66,13 +51,8 @@ border: none;
   select {
     padding: 8px;
     font-size: 14px;
- 
-    border-radius: 4px;
     cursor: pointer;
-        width: 60px;
-            border: none;
-            
-
+    width: fit-content;
+    border: none;
   }
-
 </style>

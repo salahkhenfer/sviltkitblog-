@@ -7,22 +7,12 @@ import Contact from "../../pages/Contact.svelte"
 
 
 
-    <!-- Page Header Start -->
-    <div class="container-fluid bg-dark p-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="display-4 text-white">Contact Us</h1>
-                <a href="">Home</a>
-                <i class="far fa-square text-primary px-2"></i>
-                <a href="">Contact</a>
-            </div>
-        </div>
-    </div>
-    <!-- Page Header End -->
+    
 
 
     <!-- Contact Start -->
-    <Contact/>
+    <iframe src="https://calendly.com/enghamzasalem77/clientsbio?month=2023-12" frameborder="0" width="100%" height="100vw"></iframe>
+    <!-- <Contact/> -->
     <!-- Contact End -->
 
 

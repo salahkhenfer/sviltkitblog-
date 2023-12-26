@@ -1,49 +1,45 @@
 <script>
-
+    import { t, locale, locales } from '../lang/i18n'
+let cot 
+$ : cot =$locale
 </script>
-    <div class="container-fluid bg-secondary p-0">
-        <div class="row g-0">
-            <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">Welcome To <span class="text-primary">Shawerr </span></h1>
-                <h4 class="text-primary mb-4">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem sit clita duo justo magna dolore</h4>
-                <p class="mb-4">Et stet ipsum nonumy rebum eos justo, accusam invidunt aliquyam stet magna at et sanctus, vero sea sit amet dolores, sit dolor duo invidunt dolor, kasd rebum consetetur diam invidunt erat stet. Accusam nonumy lorem kasd eirmod. Justo clita sadipscing ea invidunt rebum sadipscing consetetur. Amet diam amet amet sanctus sanctus invidunt erat ipsum eirmod.</p>
-                <a href="../routes/quote" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Get A Quote</a>
+    <div class={`container-fluid bg-secondary p-0  ${cot == "ar" ? "durationRtl" :"durationLtr"} `} >
+        <div class="row g-0 ">
+            <div class="col-lg-6 py-6 px-5 durationRtl">
+                <h1 class="display-5 mb-4 text-center ">{$t("WelcomeTo")} <span class="text-primary">{$t("Shawerr")}</span></h1>
+                <h4 class="text-primary text-center mb-4">{$t("afterWelcome")}</h4>
+                <p class="mb-4  text-center ">{$t("afterAfterWelcome")}</p>
+                <a href="../routes/quote" class="btn btn-primary d-flex  justify-content-center align-items-start  py-md-3 px-md-5 rounded-pill"> {$t("GetQuote")}</a>
             </div>
             <div class="col-lg-6">
                 <div class="h-100 d-flex flex-column justify-content-center align-items-start bg-primary p-5">
-                    <div class="d-flex text-white mb-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-tie fs-4"></i>
+                    <div class="d-flex  text-white mb-5  ">
+                        <div class="d-flex  flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle  mb-4" style="width: 60px; height: 60px;">
+                            <i class="fa fa-user-tie fs-4  "></i>
                         </div>
-                        <div class="ps-4">
-                            <h3>Security Check</h3>
-                            <p class="mb-0">Secure data and white hacking websites</p>
+                        <div class="ps-4 mx-3 ">
+                            <h3  class="d-flex align-items-justify">{$t("SecurityCheck")}</h3>
+                            <p class="mb-0 d-flex align-items-justify">{$t("SecurityCheckDes")}</p>
                         </div>
                     </div>
                     <div class="d-flex text-white mb-5">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
                             <i class="fa fa-chart-line fs-4"></i>
                         </div>
-                        <div class="ps-4">
-                            <h3>Products Evaluation</h3>
-                            <p class="mb-0">Development Price</p>
+                        <div class="ps-4  mx-3">
+                            <h3 >{$t("ProductsEvaluation")}</h3>
+                            <p class="mb-0 d-flex align-items-justify ">{$t("ProductsEvaluationDes")}</p>
                         </div>
                     </div>
                     <div class="d-flex text-white">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
                             <i class="fa fa-balance-scale fs-4"></i>
                         </div>
-                        <div class="ps-4">
-                                <h3>Tech Consultation</h3>
-                            <p  class="mb-0">
-                                Tempor erat elitr rebum at clita
-                                
-                                
-                                
-                                
-                                
-                                
-                                
+                        <div class="ps-4  mx-3">
+                                <h3>{$t("TechConsultation")}</h3>
+                            <p  class="mb-0 d-flex align-items-justify">
+                            {$t("TechConsultationDes")}
+                             
                                 </p>
                         </div>
                     </div>
