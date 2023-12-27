@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit'
+
 import { loadPage } from '$lib/content'
 
 export async function load({ params }) {

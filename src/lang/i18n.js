@@ -1,9 +1,12 @@
 import { derived, writable } from 'svelte/store'
-import { browser } from '$app/environment'
-import translations from './translations'
 
+import translations from './translations'
 export const locale = writable('ar')
 export const locales = Object.keys(translations)
+
+// Now you can use the currentLocale variable in this file
+
+// This will log the current value of the `locale` store
 
 function translate(locale, key, vars) {
   // Let's throw some errors if we're trying to use keys/locales that don't exist.

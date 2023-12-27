@@ -101,10 +101,6 @@ h6,
   outline: none;
   transition: 0.5s;
 }
-.navbar {
-  display: flex !important;
-  justify-content: space-between !important;
-}
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
   padding: 20px 15px;

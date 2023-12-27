@@ -5,7 +5,7 @@
     import team2 from "../../img/team-2.jpg"
     import team3 from "../../img/team-3.jpg"
 import About from "../../pages/About.svelte"
-    import { t, locale, locales } from '../../../src/lang/i18n'
+    import { t, locale, locales } from '../../lang/i18n'
 
 </script>
 

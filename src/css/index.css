@@ -44,7 +44,7 @@
   font-family: 'Tajawal', sans-serif !important;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* purgecss end ignore */
@@ -53,10 +53,26 @@ iframe {
 }
 
 .durationRtl {
-  direction: rtl;
+  direction: rtl !important;
   transition: all 3s ease;
+  text-align: right !important;
 }
 .durationLtr {
-  direction: ltr;
+  direction: ltr !important;
   transition: all 3s ease;
+  text-align: left !important;
+}
+.navbar-b {
+  margin-left: 50%;
+  direction: rtl !important;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1300px) {
+  .navbar-b {
+    margin-left: 30%;
+    direction: rtl !important;
+  }
 }

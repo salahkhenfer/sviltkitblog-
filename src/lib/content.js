@@ -1,3 +1,5 @@
+// subscribe to the `locale` store to get its current value
+
 const pages = Object.entries(import.meta.glob('/content/**/*.md', { eager: true }))
   .map(([path, Page]) => ({
     id: path.match(/content\/(.*)\.\w+$/)[1],

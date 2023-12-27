@@ -1,6 +1,5 @@
 <script>
-  import { t, locale, locales } from "./i18n";
-	
+import { t, locale, locales  } from '../lang/i18n'
 	// Create a locale specific timestamp
   $: time = new Date().toLocaleDateString($locale, {
     weekday: "long",
@@ -8,11 +7,15 @@
     month: "long",
     day: "numeric",
   });
+
+
+   
+
 </script>
 
 <main>
   <div class="language-selector">
-    <select class="locale-select" bind:value={$locale} >
+    <select class="locale-select" bind:value={$locale}  >
       {#each locales as l (l)}
         <option value={l} key={l} o >
           {l === "ar" ? "عربي" : "English"}

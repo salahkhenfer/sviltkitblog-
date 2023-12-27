@@ -1,16 +1,13 @@
 
 <script>
     import Blog1 from "../../img/blog-1.jpg"
+import { t, locale, locales  } from '../../lang/i18n'
+import { page  } from '$app/stores'
+import config from "../../config"
+import { format } from "date-fns"
 
-    const blogArray = [
-        "5-simple-tips-for-a-more-organized-life",
-        "how-to-create-a-successful-morning-routine",
-        "ode-to-svelte",
-        "style-guide",
-        "tablog-minimalistic-blog-theme",
-        "the-benefits-of-a-good-night-s-sleep",
-        "the-power-of-mindfulness-in-daily-life"
-    ];
+let cot 
+$ : cot =$locale
 
 </script>
 
@@ -27,7 +24,7 @@
     </div>
     <!-- Page Header End -->
 
-
+  
     <!-- Blog Start -->
     <div class="container-fluid py-6 px-5">
         <div class="row g-5">
@@ -35,51 +32,57 @@
             <div class="col-lg-8">
                 <div class="row g-5">
                     <!-- list of blogs  -->
-                  {#each blogArray as i}
-                    <a  href={`/${i}`} class="col-xl-6 col-lg-12 col-md-6 ">
+
+
+                  {#each $page.data.posts as i}
+  {#if i.id.split("-")[i.id.split("-").length - 1]=== "ar" && cot === "ar" }
+     <a  href={`/${i.id}`} class="col-xl-6 col-lg-12 col-md-6 ">
                         <div class="blog-item">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid" src={Blog1} alt="">
                             </div>
                             <div class="bg-secondary d-flex">
                                 <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
-                                    <span>01</span>
-                                    <h5 class="text-uppercase m-0">Jan</h5>
-                                    <span>2045</span>
+                                    <span>{i.date.split("-")[0]}</span>
+                                    <h5 class="text-uppercase m-0">{format(new Date(i.date), config.dateFormat).slice(0,3)}</h5>
+                                    <span>{i.date.split("-")[2].slice(0,2)}</span>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center py-3 px-4">
-                                    <div class="d-flex mb-2">
-                                        <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
-                                        <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
-                                    </div>
-                                    <a class="h4" href="">Magna sea dolor ipsum amet lorem eos</a>
+                                  
+                                    <a class="h4" href="">{i.title}</a>
                                 </div>
                             </div>
                         </div>
                     </a>
+
+               {/if}
+                 { #if i.id.split("-")[i.id.split("-").length - 1] !== "ar" && cot !== "ar" }	
+
+                 <a  href={`/${i.id}-ar`} class="col-xl-6 col-lg-12 col-md-6 ">
+                        <div class="blog-item">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src={Blog1} alt="">
+                            </div>
+                            <div class="bg-secondary d-flex">
+                                <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
+                                    <span>{i.date.split("-")[0]}</span>
+                                    <h5 class="text-uppercase m-0">{i.date.split("-")[1]}</h5>
+                                    <span>{i.date.split("-")[2].slice(0,2)}</span>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center py-3 px-4">
+                                  
+                                    <a class="h4" href="">{i.title}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+               {/if}
                   {/each}
               
       
 <!-- end list of blogs  -->
-                    <div class="col-12">
-                        <nav aria-label="Page navigation">
-                          <ul class="pagination pagination-lg m-0">
-                            <li class="page-item disabled">
-                              <a class="page-link rounded-0" href="#" aria-label="Previous">
-                                <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
-                              </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link rounded-0" href="#" aria-label="Next">
-                                <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                              </a>
-                            </li>
-                          </ul>
-                        </nav>
-                    </div>
+              
                 </div>
             </div>
             <!-- Blog list End -->
@@ -87,12 +90,7 @@
             <!-- Sidebar Start -->
             <div class="col-lg-4">
                 <!-- Search Form Start -->
-                <div class="mb-5">
-                    <div class="input-group">
-                        <input type="text" class="form-control p-3" placeholder="Keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
+  
                 <!-- Search Form End -->
 
  
@@ -100,34 +98,30 @@
                 <!-- Recent Post Start -->
                 <div class="mb-5">
                     <h2 class="mb-4">Recent Post</h2>
-                      {#each [...Array(10).keys()] as i}
+                          {#each $page.data.posts as i}
+  {#if i.id.split("-")[i.id.split("-").length - 1]=== "ar" && cot === "ar" }
         <div class="d-flex mb-3">
+            
                         <img class="img-fluid" src={Blog1} style="width: 100px; height: 100px; object-fit: cover;" alt="">
-                        <a href="" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
+                        <a href={`/${i.id}`} class="h5 d-flex align-items-center bg-secondary px-3 mb-0">{i.title}
                         </a>
                     </div>
-  {/each}
+                          {/if}
+                    { #if i.id.split("-")[i.id.split("-").length - 1] !== "ar" && cot !== "ar" }	
+     
+            <div class="d-flex mb-3">
+                        <img class="img-fluid" src={Blog1} style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                        <a href="" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">{i.title}
+                        </a>
+                    </div>
+                    {/if}
+
+                  {/each}
+
                 
               
                 </div>
-                <!-- Recent Post End -->
-
-                <!-- Image Start -->
-                <div class="mb-5">
-                    <img src={Blog1} alt="" class="img-fluid">
-                </div>
-                <!-- Image End -->
-
-   
-                <!-- Plain Text Start -->
-                <div>
-                    <h2 class="mb-4">Plain Text</h2>
-                    <div class="bg-secondary text-center" style="padding: 30px;">
-                        <p>Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna takimata, amet sit et diam dolor ipsum amet diam</p>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
-                    </div>
-                </div>
-                <!-- Plain Text End -->
+     
             </div>
             <!-- Sidebar End -->
         </div>

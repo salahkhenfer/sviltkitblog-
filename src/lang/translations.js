@@ -10,9 +10,19 @@ export default {
     BLOG: 'BLOG',
     CONTACT: 'CONTACT',
     Shawerr: ' Shawerr',
-    Cpptokens: 'No-Code Tool For creating Token, Airdrops.',
+
+    // ======== start web sites =========
+
     visitWeb: 'Visit Web',
+    Cpptokens: 'No-Code Tool For creating Token, Airdrops.',
     leadlinker: 'Leadlinker Innovative Technology For Marketers & Influencers & Affiliaters',
+    ClientAi: 'Looking to increase the number of clients?',
+    Askmech: 'THE SEO AI monster 6000 Clicks 183,000 Impressions With Zero Budget',
+    souq101: 'Fastest Landing Page ever, 5X sales in last 3 month using AI',
+    gptafser: '40K article + AI integrated + Google Adsense Connected ',
+    namazapp: 'AI Customer Services System using open source with ZERO deployment.',
+    // ======== end  web sites =========
+
     Testimonials: [
       {
         client: 'Leo Helsi ',
@@ -49,6 +59,9 @@ export default {
       'Then you are in the right place! Shawer is the leading platform in the field of technology consulting in the Arab region, as we provide a wide range of services specifically designed to meet the needs of companies, institutions and developers of all sizes.',
     WhatWeOffer: 'What We Offer',
     UseCases: 'Use Cases',
+    LatestBlogPost: 'Latest Blog Post',
+    Archive: 'Archive',
+    AllRightsReserved: 'All Rights Reserved.',
   },
 
   ar: {
@@ -66,7 +79,19 @@ export default {
     Cpptokens: 'أداة بدون تعليمات برمجية لإنشاء الرموز المميزة، ',
 
     visitWeb: 'زيارة الموقع ',
+
+    // ==========
+
+    VisitWeb: 'زيارة الويب',
+    Cpptokens: 'أداة بدون تعليمات برمجية لإنشاء الرموز المميزة، .',
     leadlinker: 'تقنية  المبتكرة للمسوقين والمؤثرين والشركات التابعة',
+    ClientAi: 'هل تتطلع إلى زيادة عدد العملاء؟',
+    Askmech: 'وحش  6000 نقرة و183000 ظهور بميزانية صفرية',
+    souq101: 'أسرع صفحة مقصودة على الإطلاق، مبيعات 5 أضعاف في آخر 3 أشهر باستخدام الذكاء الاصطناعي',
+    gptafser: 'مقالة بحجم 40 ألف + الذكاء الاصطناعي المدمج + اتصال قوقل ادسنس ',
+    namazapp: 'نظام خدمات العملاء بالذكاء الاصطناعي يستخدم مصدرًا مفتوحًا مع عدم النشر.',
+    // ==========
+
     Testimonials: [
       {
         client: 'ليو هيلسي',
@@ -103,5 +128,8 @@ export default {
 
     WhatWeOffer: 'ما نقدمه',
     UseCases: 'حالات الاستعمال ',
+    LatestBlogPost: 'اخر المدونات ',
+    Archive: ' اخر المدونات ',
+    AllRightsReserved: 'كل الحقوق محفوضة ',
   },
 }

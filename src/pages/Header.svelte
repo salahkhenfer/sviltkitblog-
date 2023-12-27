@@ -15,16 +15,18 @@ $ : cot =$locale
 }
 </style>
 <!-- Header Start -->
-    <nav class={ ` ${cot == "ar" ? "durationRtl" :""}   navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0 `  }
+    <nav class={ ` ${cot == "ar" ? "durationRtl" :""}   navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 `  }
   
   >
 
 
-         <a href="/" class={`navbar-brand ${cot == "ar" ? "navbar-br" : ""}    p-0`}>
+         <a href="/" class={`navbar-brand ${cot == "ar" ? "navbar-b" : ""}    p-0`}>
              <h1 class="m-0 text-uppercase text-primary">{$t("Shawerr")} </h1>
          </a>
     
-
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div  class="collapse navbar-collapse " id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 me-n3">
