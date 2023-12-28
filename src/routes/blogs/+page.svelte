@@ -16,7 +16,7 @@ $ : cot =$locale
     <div class="container-fluid bg-dark p-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="display-4 text-white">Blog </h1>
+                <h1 class="display-4 text-white">{$t("BLOG")} </h1>
        
       
             </div>
