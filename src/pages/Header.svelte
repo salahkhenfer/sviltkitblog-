@@ -21,7 +21,7 @@ $ : cot =$locale
 
 
          <a href="/" class={`navbar-brand ${cot == "ar" ? "navbar-b" : ""}    p-0`}>
-             <h1 class="m-0 text-uppercase text-primary">{$t("Shawerr")} </h1>
+             <h1 class="m-0 text-primary">{$t("Shawerr")} </h1>
          </a>
     
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

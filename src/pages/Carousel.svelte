@@ -14,8 +14,7 @@ import carouselImg from "../img/carousel-2.jpg"
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">{$t("homepage.BUSINESSCONSULTANCY")}</h5>
                             <h1 class="display-1 text-white mb-md-4">{$t("homepage.welcome")}</h1>
-                                                       <a href="./quote" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">{$t("GetQuote")}</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">{$t("ContactUs")}</a>
+                                                       <a href="./contact" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">{$t("GetQuote")}</a>
                         </div>
                     </div>
                 </div>

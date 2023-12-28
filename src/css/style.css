@@ -96,7 +96,7 @@ h6,
 .navbar-light .navbar-nav .nav-link {
   padding: 35px 15px;
   font-size: 18px;
-  text-transform: uppercase;
+
   color: var(--dark);
   outline: none;
   transition: 0.5s;

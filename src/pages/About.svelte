@@ -9,7 +9,7 @@ $ : cot =$locale
                 <h1 class="display-5 mb-4 text-center ">{$t("WelcomeTo")} <span class="text-primary">{$t("Shawerr")}</span></h1>
                 <h4 class="text-primary text-center mb-4">{$t("afterWelcome")}</h4>
                 <p class="mb-4  text-center ">{$t("afterAfterWelcome")}</p>
-                <a href="../routes/quote" class="btn btn-primary d-flex  justify-content-center align-items-start  py-md-3 px-md-5 rounded-pill"> {$t("GetQuote")}</a>
+                <a href="../contact" class="btn btn-primary d-flex  justify-content-center align-items-start  py-md-3 px-md-5 rounded-pill"> {$t("GetQuote")}</a>
             </div>
             <div class="col-lg-6">
                 <div class="h-100 d-flex flex-column justify-content-center align-items-start bg-primary p-5">

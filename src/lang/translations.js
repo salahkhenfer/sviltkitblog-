@@ -4,11 +4,11 @@ export default {
     'homepage.BUSINESSCONSULTANCY': 'BUSINESS CONSULTANCY',
     ContactUs: 'Contact Us',
     GetQuote: 'Get Quote',
-    HOME: 'HOME',
-    ABOUT: 'ABOUT us',
-    SERVICE: 'SERVICE',
-    BLOG: 'BLOG',
-    CONTACT: 'CONTACT',
+    HOME: 'Home',
+    ABOUT: 'About Us',
+    SERVICE: 'Service',
+    BLOG: 'Blog',
+    CONTACT: 'Contact',
     Shawerr: ' Shawerr',
 
     // ======== start web sites =========
